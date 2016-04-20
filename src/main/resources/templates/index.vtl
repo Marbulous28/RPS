@@ -7,26 +7,32 @@
   <body>
     <div class="container">
       <form action="/" method="POST">
-        <label for="Player1Move">Player 1, what move would you like to make?</label>
-        <select name="Player1Move" id="Player1Move">
-          <option value="rock">Rock</option>
-          <option value="paper">Paper</option>
-          <option value="scissors">Scissors</option>
-        </select>
-        <label for="Player2Move">Player 2, what move would you like to make?</label>
-        <select name="Player2Move" id="Player2Move">
-          <option value="rock">Rock</option>
-          <option value="paper">Paper</option>
-          <option value="scissors">Scissors</option>
-        </select>
-        <button type="select">Go</button>
+        <div class="form-group">
+          <label for="Player1Move">Player 1, what move would you like to make?</label>
+          <select name="Player1Move" id="Player1Move" class="form-control">
+            <option value="rock">Rock</option>
+            <option value="paper">Paper</option>
+            <option value="scissors">Scissors</option>
+          </select>
+        </div>
+        <div clas="form-group">
+          <label for="Player2Move">Player 2, what move would you like to make?</label>
+          <select name="Player2Move" id="Player2Move" class="form-control">
+            <option value="rock">Rock</option>
+            <option value="paper">Paper</option>
+            <option value="scissors">Scissors</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <button type="select" class="btn">Go</button>
+        </div>
       </form>
-    </div>
+      #if($winner)
 
-    #if($winner)
-    $winner
-    #else
-    Who WIll BE VICOTRIUOIS!??!?!?!?
-    #end
+      <h4>$winner</h4>
+      #else
+      <h4></h4>
+      #end
+    </div>
   </body>
 </html>
