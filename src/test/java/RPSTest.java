@@ -17,6 +17,6 @@ public class RPSTest {
   @Test
   public void checkWinner_rockVpaper_Player2Wins() {
     RPS testGame = new RPS();
-    assertEquals("Player Two Wins", testGame.checkWinner("rock", "paper"));
+    assertEquals("Player Two Winsasf", testGame.checkWinner("rock", "paper"));
   }
 }

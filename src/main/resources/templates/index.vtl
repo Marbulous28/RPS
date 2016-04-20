@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ROCK PAPER SCISSORS~~~~$</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+  </head>
+  <body>
+    <div class="container">
+      <form action="/" method="POST">
+        <label for="Player1Move">Player 1, what move would you like to make?</label>
+        <select name="Player1Move" id="Player1Move">
+          <option value="rock">Rock</option>
+          <option value="paper">Paper</option>
+          <option value="scissors">Scissors</option>
+        </select>
+        <label for="Player2Move">Player 2, what move would you like to make?</label>
+        <select name="Player2Move" id="Player2Move">
+          <option value="rock">Rock</option>
+          <option value="paper">Paper</option>
+          <option value="scissors">Scissors</option>
+        </select>
+        <button type="select">Go</button>
+      </form>
+    </div>
+
+    #if($winner)
+    $winner
+    #else
+    Who WIll BE VICOTRIUOIS!??!?!?!?
+    #end
+  </body>
+</html>
